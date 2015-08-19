@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Montserrat Hairline';
+    src: url('../fonts/montserrat/montserrat-hairline-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-hairline-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-hairline-webfont.svg#montserrathairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Ultra-light';
+    src: url('../fonts/montserrat/montserrat-ultralight-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-ultralight-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-ultralight-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-ultralight-webfont.svg#montserratultra_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/montserrat/montserrat-light-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-light-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Semi-bold';
+    src: url('../fonts/montserrat/montserrat-semibold-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-semibold-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-semibold-webfont.svg#montserratsemi_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/montserrat/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Extra-bold';
+    src: url('../fonts/montserrat/montserrat-extrabold-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-extrabold-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-extrabold-webfont.svg#montserratextra_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('../fonts/montserrat/montserrat-black-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-black-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-black-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-black-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat/montserrat-black-webfont.svg#montserratblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.normal {
+  font-family: 'Montserrat Light', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+strong, b, .bold, .strong {
+	font-family: 'Montserrat Semi-bold', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+body {
+	@extend .normal;
+	color: $grey;
+
+	/* text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0); */
+}
+
+h1,h2,h3 {
+
+	margin-top:0;
+	margin-bottom:1em;
+
+	&, strong, b, .strong {
+		@extend .strong;
+	}
+
+	a {
+		&, &:hover, &:focus {
+			color: $grey;
+		}
+	}
+}
+
+h1 {
+	font-size:1.5em;
+	text-transform:uppercase;
+}
+h2 {
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+h3 {
+	font-size:1.1em;
+	text-transform:uppercase;
+}
+
+p + h1, p + h2 {
+	margin-top:1em;
+}
+
+a {
+  color: $blue;
+}
+a:hover {
+  color: $blue;
+}
+
+
+.small-text {
+	font-size:0.85em;
+}
+.extra-small-text {
+	font-size:0.75em;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "_90d",
+  "moduleName": "_90dApp",
+  "version": "1.0.0",
+  "authors": [
+    "Dominic Fallows <consultant@dominicfallows.uk>",
+    "90 Degrees <digitalstudio@90degrees.com>"
+  ],
+  "license": "proprietry",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "modernizr": "~2.8.3"
+  }
+}

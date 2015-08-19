@@ -1,0 +1,152 @@
+.property-search-container {
+
+  margin-top:20px;
+  margin-bottom:30px;
+
+  .property-search-toolbar {
+    .property-search-selection {
+
+      margin-bottom:30px;
+      @media(min-width:768px) {
+        margin-bottom:10px;
+      }
+
+      .title, .search, label {
+        margin-left:30px;
+        display:block;
+        font-size:0.9em;
+        color:$grey-light;
+      }
+      .title {
+        margin-bottom:10px;
+      }
+      .search {
+        position:relative;
+        @extend .bold;
+        color:$blue;
+        text-transform:uppercase;
+
+        border-bottom:1px solid $grey-lighter;
+        padding-bottom:5px;
+        margin-bottom:10px;
+
+        i {
+          position:absolute;
+          left:-30px;
+
+          border:2px solid $blue;
+          @include border-radius(30px);
+          width:20px;
+          height:20px;
+          line-height:16px;
+          text-align:center;
+
+        }
+      }
+      label {
+        overflow:hidden;
+        position:relative;
+        font-weight:normal;
+        text-transform:uppercase;
+
+        margin-bottom:0;
+
+        input {
+          position:absolute;
+          left:-100%;
+        }
+        input:checked + span {
+          color:$blue;
+          @extend .bold;
+        }
+
+        &:hover, &:focus {
+          cursor:pointer;
+        }
+      }
+    }
+    .search-submit {
+      text-align:right;
+      .btn-search {
+        @extend .bold;
+        text-transform:uppercase;
+        margin-bottom:5px;
+        font-size:0.9em;
+        i {
+          margin-left:5px;
+          display:inline-block;
+        }
+      }
+      .reset-search {
+        font-size:0.8em;
+        display:block;
+        color:$grey;
+      }
+    }
+
+
+    .property-freetext {
+      margin-top:40px;
+      display:block;
+      position:relative;
+      height:50px;
+      margin-right:30px;
+
+      input {
+        display:block;
+        border:none;
+        border-bottom:1px solid $grey-light;
+        font-size:14px;
+        padding-bottom:5px;
+        width:100%;
+        color: $grey-light;
+
+        @include placeholder {
+          color: $grey-light;
+          opacity:1;
+        }
+      }
+      i {
+        position:absolute;
+        right:-30px;
+        border:2px solid $grey-light;
+        @include border-radius(30px);
+        width:25px;
+        height:25px;
+        text-align:center;
+        font-size:13px;
+        line-height:18px;
+        color:$grey-light;
+      }
+    }
+
+  }
+  .property-search-results {
+    margin-top:40px;
+
+    .property {
+
+      .entry-header {
+
+        .property-thumbnail {
+          margin-bottom:10px;
+          display:block;
+        }
+        .property-title {
+          @extend .normal;
+          text-transform: none;
+          font-size:0.9em;
+          margin-bottom:0;
+
+          a {
+            color:$blue;
+          }
+        }
+      }
+      .property-size {
+        font-size:0.9em;
+      }
+    }
+  }
+
+}

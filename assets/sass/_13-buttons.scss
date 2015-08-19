@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 0;
+  outline: none !important;
+}
+
+.btn-grey {
+  background-color: $grey;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($grey, 10%);
+    color:$white;
+  }
+}
+
+
+.btn-blue {
+  background-color: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($blue, 10%);
+    color:$white;
+  }
+}

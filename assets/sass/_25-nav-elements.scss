@@ -1,0 +1,46 @@
+.icon-arrow-down {
+  width:28px;
+  height:28px;
+
+  position:relative;
+
+  &::before {
+    position:absolute;
+    content:url(../img/arrow-down.png);
+    left:0;
+    top:0;
+  }
+}
+
+.page-nav {
+
+  .next, .prev {
+    text-align:center;
+  }
+
+  a {
+    display:inline-block;
+    position:relative;
+
+    text-align:center;
+    text-transform: uppercase;
+    color:$grey-light;
+    font-size:0.9em;
+
+    padding-top:35px;
+
+    &:hover, &:focus {
+      color:$blue;
+      text-decoration:none;
+    }
+
+    &::before {
+      position:absolute;
+      content:url(../img/arrow-down.png);
+      left:50%;
+      top:0;
+      margin-left:-14px;
+    }
+
+  }
+}

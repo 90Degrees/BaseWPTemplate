@@ -1,0 +1,15 @@
+body#tinymce.wp-editor {
+
+}
+
+body#tinymce.wp-editor .center-dynamic-width-elements {
+  display:inline-block;
+  text-align:center;
+}
+
+body#tinymce.wp-editor .small-text {
+	font-size:0.85em;
+}
+body#tinymce.wp-editor .extra-small-text {
+	font-size:0.75em;
+}

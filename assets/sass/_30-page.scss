@@ -1,0 +1,154 @@
+.page {
+
+  .entry-title {
+    display:none;
+  }
+}
+
+
+.page-contact {
+
+  .contacts-table, .contact-map {
+    margin-top:30px;
+    margin-bottom:40px;
+
+    @media(min-width:768px) {
+      margin-top:80px;
+      margin-bottom:80px;
+    }
+  }
+
+  .contacts-table {
+    width:100%;
+    text-align:center;
+
+    @media(min-width:768px) {
+      text-align:left;
+
+      display: table;
+      table-layout: fixed;
+
+      .contact {
+        display:table-cell;
+        padding-right:40px;
+      }
+    }
+
+    .contact {
+      margin-bottom:30px;
+
+      h3 {
+        color:$blue;
+        border-bottom:1px solid $grey-lighter;
+        padding-bottom:10px;
+        margin-bottom:15px;
+
+        display:inline-block;
+
+        @media(min-width:768px) {
+          display:block;
+        }
+      }
+
+      a {
+        color:$grey;
+      }
+    }
+
+  }
+
+  .contact-map {
+
+    .acf-map {
+    	width: 100%;
+      height: 300px;
+
+      @media(min-width:768px) {
+        height: 450px;
+      }
+    }
+  }
+
+}
+
+.page-services {
+
+  .services-tabs {
+    position: relative;
+    background-color:$grey;
+
+    @media(min-width:768px) {
+      top:-20px;
+    }
+    @media(min-width:1200px) {
+      top:-30px;
+    }
+
+    .nav-tabs {
+      text-align:center;
+      border-bottom:none;
+      width:100%;
+      position:absolute;
+      top:0;
+      background-color:$grey;
+      z-index:100;
+
+      li {
+        display:inline-block;
+        float:none;
+
+        a {
+          text-transform:uppercase;
+          opacity:0.75;
+          color:$white;
+          font-size:0.9em;
+
+          &:hover, &:focus {
+            opacity:1;
+            background-color:transparent;
+            border:1px solid transparent;
+          }
+        }
+        &.active {
+          background-color:transparent;
+
+          a {
+            @extend .strong;
+            background-color:transparent;
+            border:1px solid transparent;
+            opacity:1;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+
+      position:relative;
+      z-index:99;
+
+      &, .tab-pane {
+        min-height:350px;
+
+        @extend .full-background;
+
+        @media(min-width:768px) {
+          min-height:480px;
+        }
+      }
+
+      .tab-pane {
+
+        .service-content {
+          margin-top:80px;
+          padding:20px;
+          background:transparentize($white, 0.1);
+        }
+      }
+
+
+    }
+
+
+  }
+}

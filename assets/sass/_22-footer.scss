@@ -1,0 +1,115 @@
+.site-footer {
+
+	padding-top:15px;
+	padding-bottom:15px;
+
+	.container-fluid {
+		max-width:$site-container-width;
+    margin:0 auto;
+	}
+
+	.site-footer-nav {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		padding-top:5px;
+
+		background-color:$grey;
+		background-color:rgba($black, 0.6);
+
+		ul.site-navbar {
+			.menu-item {
+				border:5px solid transparent;
+				a {
+					color:$white;
+				}
+				&:hover {
+					border-color: transparent;
+					background-color:transparent;
+					a {
+						color:$blue;
+					}
+				}
+			}
+		}
+	}
+
+	.nav-ctas {
+		float:right;
+	}
+
+}
+
+.nav-ctas {
+	li {
+		a {
+			position:relative;
+			display:block;
+			margin-left: 0;
+	    margin-right: 0;
+	    margin-bottom: 5px;
+	    padding-left: 20px;
+
+			text-transform:uppercase;
+
+			&::before {
+	      content: " ";
+	      background: url("../img/nav-icons-sprite.png") 0 0 no-repeat transparent;
+	      height: 15px;
+	      width: 15px;
+	      overflow: hidden;
+	      position: absolute;
+	      top: 2px;
+	      left: 0;
+	    }
+
+			color:$grey;
+			border: 5px solid transparent;
+			&:hover {
+				background-color:$grey;
+	      background-color:transparentize(black, 0.7);
+	      border: 5px solid $grey;
+	      border: 5px solid transparentize(black, 0.7);
+	      @include border-radius(3px);
+        color:$white;
+        text-decoration:none;
+			}
+
+			&.brochure::before {
+				background-position:-147px -15px;
+			}
+			&.brochure:hover::before {
+				background-position:-147px 0px;
+			}
+			&.video::before {
+				background-position:-162px -15px;
+			}
+			&.video:hover::before {
+				background-position:-162px 0px;
+			}
+		}
+	}
+}
+
+
+.browser-upgrade {
+	@include border-radius(0);
+	position:fixed;
+	bottom:50px;
+	left:3%;
+	right:3%;
+	z-index:999999;
+	margin:0;
+
+	@media(min-width:768px) {
+		left:10%;
+		right:10%;
+	}
+
+	p {
+		text-align:center;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+}

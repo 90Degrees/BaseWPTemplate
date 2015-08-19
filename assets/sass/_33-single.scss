@@ -1,0 +1,28 @@
+.single {
+
+  .single-content {
+
+    @media(min-width: 768px) {
+      float:right !important;
+    }
+  }
+
+
+  article {
+
+    .entry-title {
+      font-size:2em;
+      margin-bottom:10px;
+      color:$blue;
+    }
+    .entry-meta {
+      @extend .strong;
+      color:$blue;
+      margin-bottom:15px;
+    }
+
+    .post-thumbnail {
+      margin-bottom:20px;
+    }
+  }
+}

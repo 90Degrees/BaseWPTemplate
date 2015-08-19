@@ -1,0 +1,210 @@
+.site-header {
+
+  background-color:$white;
+  position:fixed;
+  width:100%;
+  z-index:1000;
+
+  padding-top: 15px;
+  margin-bottom:15px;
+
+  @media(min-width:767px) {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-default {
+    margin:0 auto;
+
+    background-color:$white;
+    border: none;
+
+    .navbar-header {
+      float: none;
+      width: 100%;
+
+      .nav-social-container {
+        @media(max-width:767px) {
+          display:none !important;
+        }
+      }
+
+      .nav-actions {
+        text-align:right;
+      }
+
+      .navbar-toggle {
+
+        margin: 0;
+        padding:10px;
+
+        @include border-radius(0);
+        border-color: $blue;
+        background-color: $blue;
+
+        .icon-bar {
+          background-color: $white;
+        }
+
+        &:hover, &:focus {
+          background-color: $grey;
+          border-color: $grey;
+
+          .icon-bar {
+            background-color: $white;
+          }
+        }
+      }
+
+
+      .nav-branding {
+
+        text-align:left;
+
+        h1.navbar-brand {
+          margin: 0;
+          padding: 0;
+          max-width: 180px;
+          display: inline-block;
+          height: auto;
+          line-height: 1;
+          float:none;
+
+          @media(min-width:768px) {
+            max-width: 200px;
+          }
+          @media(min-width:992px) {
+            max-width: 230px;
+          }
+        }
+
+      }
+
+      ul.nav-social {
+        list-style-type:none;
+        font-size: 0; //Fix for inline-block spacing
+        text-align:center;
+        margin:5px 0 15px 0;
+        padding:0;
+
+        @media(min-width:768px) {
+          text-align:right;
+        }
+
+        li {
+          padding:0 0 0 3px;
+          margin:0;
+          display:inline-block;
+        }
+        a.nav-icon {
+
+          display:inline-block;
+          width:29px;
+          height:29px;
+          overflow:hidden;
+          text-indent:-99999px;
+          background:url(../img/nav-icon-search.png) no-repeat 0 0 transparent;
+
+          &:hover {
+            background-position:0 -29px;
+            cursor: pointer;
+          }
+
+          &.nav-facebook {
+            background-image:url(../img/nav-icon-facebook.png);
+          }
+          &.nav-twitter {
+            background-image:url(../img/nav-icon-twitter.png);
+          }
+          &.nav-linkedin {
+            background-image:url(../img/nav-icon-linkedin.png);
+          }
+        }
+      }
+
+
+      .site-navbar-container {
+
+        background-color:$blue;
+        margin-top:15px;
+
+        &, .container, .container .row, .container .row .col-sm-12 {
+          min-height:0 !important;
+        }
+
+        #site_header_navbar {
+
+          border:none;
+
+          .site-navbar {
+            li, li a {
+              height:40px;
+              line-height:40px;
+            }
+
+            margin:0 auto;
+            padding:0;
+            list-style-type: none;
+            width:100%;
+
+            @media(min-width:768px) {
+              display: table;
+              table-layout: fixed;
+              font-size:0.95em;
+            }
+
+            >li {
+
+              text-align:center;
+
+              @media(min-width:768px) {
+                display: table-cell;
+
+                &:first-of-type {
+                  text-align:left;
+                }
+                &:last-of-type {
+                  text-align:right;
+                }
+                &:first-of-type, &:last-of-type {
+                  width:12%;
+                }
+              }
+
+              a {
+                display:block;
+                color:$white;
+                opacity:0.75;
+                text-transform:uppercase;
+
+                &:hover, &:focus {
+                  opacity:1;
+                  text-decoration: none;
+                }
+              }
+
+              &.current-menu-item,
+              &.current_page_parent {
+                a {
+                  opacity:1;
+                  @extend .strong;
+                }
+              }
+            }
+
+          }
+        }
+
+        @media(min-width:768px) {
+          &, .container, .container .row, #site_header_navbar, .site-navbar {
+            height: 40px;
+            line-height:40px;
+          }
+        }
+
+
+      }
+
+    }
+  }
+}

@@ -1,0 +1,117 @@
+html, body {
+  min-width: 320px;
+  @extend .full-height;
+  background-color:$blue;
+}
+*, a {
+  outline:0 !important;
+}
+
+body {
+  background:url(../img/brand-icon-separator.png) no-repeat center center $blue;
+  //@include vendor-prefix(transition, all 0.5s);
+}
+
+.site-container {
+  background-color:$white;
+  @extend .full-height;
+}
+
+.body-content {
+  padding-top:100px;
+
+  @media(min-width:768px) {
+    padding-top:145px;
+  }
+  @media(min-width:992px) {
+    padding-top:155px;
+  }
+  @media(min-width:1200px) {
+    padding-top:165px;
+  }
+}
+
+/* Layouts */
+.full-height {
+    height:auto;
+    height:100%;
+    min-height:100%;
+}
+.tb {
+    display:table;
+    .tbr, %tbr {
+        display:table-row;
+        width:100%;
+    }
+    .tbc, %tbc {
+        display:table-cell;
+        vertical-align:top
+    }
+}
+.tb-fh {
+    @extend .tb;
+    @extend .full-height;
+}
+.tbr-fh {
+    @extend %tbr;
+    @extend .full-height;
+}
+.tbc-fh {
+    @extend %tbc;
+    @extend .full-height;
+}
+div[class^="col-"][class*="tbc"][class*="tbc-fh"] {
+    float:none;
+}
+
+.col-md-1of5 {
+  .min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom:20px;
+  position: relative;
+
+  @media(min-width:991px) {
+    float:left;
+    width:20%;
+  }
+}
+
+
+/* Lists */
+ul {
+  margin:0 0 20px 0;
+  padding:0 0 0 15px;
+}
+ul.list-unstyled {
+  padding:0;
+}
+
+
+/* Images */
+img {
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+
+/* Backgrounds */
+.full-background {
+  background-position:center center;
+  @include vendor-prefix(background-size, cover);
+  -ms-behavior: url(./backgroundsize.min.htc);
+}
+
+
+
+.aligncenter {
+  margin-left:auto;
+  margin-right:auto;
+}
+.alignleft {
+  float:left;
+}
+.align-right {
+  float:right;
+}
