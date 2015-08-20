@@ -1,0 +1,13 @@
+{
+	"name": "90degrees/basewptemplate",
+	"description" : "Base template for",
+    "type"    : "wordpress-theme",
+    "license" : "proprietry",
+    "authors": [
+	    "Dominic Fallows <consultant@dominicfallows.uk>",
+    	"90 Degrees <digitalstudio@90degrees.com>"
+  	],
+    "require" : {
+        "composer/installers" : "~1.0"
+    }
+}
