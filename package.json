@@ -1,5 +1,5 @@
 {
-  "name": "90 Degrees WPBaseTemplate",
+  "name": "90deg-basewptemplate",
   "engines": {
     "node": ">= 0.10.0"
   },
